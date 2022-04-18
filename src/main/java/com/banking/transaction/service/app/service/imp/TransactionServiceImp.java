@@ -1,4 +1,4 @@
-package com.banking.transaction.service.app.serviceImpl;
+package com.banking.transaction.service.app.service.imp;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -11,7 +11,7 @@ import reactor.core.publisher.Flux;
 import reactor.core.publisher.Mono;
 
 @Service
-public class TransactionServiceImpl implements TransactionService{
+public class TransactionServiceImp implements TransactionService{
 
 	/**
 	 * Dependency injection required for the class work 
