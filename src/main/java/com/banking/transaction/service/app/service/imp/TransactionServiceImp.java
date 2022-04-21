@@ -28,7 +28,7 @@ public class TransactionServiceImp implements TransactionService{
 	}
 
 	@Override
-	public Mono<Transaction> findByid(String id) {
+	public Mono<Transaction> findById(String id) {
 		return transactionRepository.findById(id);
 	}
 

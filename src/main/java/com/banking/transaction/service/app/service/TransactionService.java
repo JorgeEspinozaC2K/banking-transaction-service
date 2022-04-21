@@ -17,7 +17,7 @@ public interface TransactionService {
 	 * This method bring a record from transaction database
 	 * @return Mono type Transaction
 	 */
-	public Mono<Transaction> findByid(String id);
+	public Mono<Transaction> findById(String id);
 	
 	/**
 	 * This method save or update a record
