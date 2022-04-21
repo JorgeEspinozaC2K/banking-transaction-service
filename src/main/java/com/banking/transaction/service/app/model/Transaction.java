@@ -21,13 +21,13 @@ public class Transaction {
 	private String id;
 	private Boolean bankDraft;
 	private	Boolean externalAccount;
-	private int personalIdentifierDestiny;
-	private int personalIdentifierCharge;
-	private int moneyType;
+	private Integer personalIdentifierDestiny;
+	private Integer personalIdentifierCharge;
+	private Integer moneyType;
 	//charge account
 	private Long numberChargeAccount;
 	//own account, another bank account, abroad
-	private int typeAccount;
+	private Integer typeAccount;
 	//destination account
 	private Long numberDestiantionAccount;
 	//amount to transfer
@@ -35,7 +35,7 @@ public class Transaction {
 	//Verification pin
 	private String password;
 	//Status transaction approved or rejected
-	private int status;
+	private Integer status;
 	//Operation date
 	private Date operationDate;
 

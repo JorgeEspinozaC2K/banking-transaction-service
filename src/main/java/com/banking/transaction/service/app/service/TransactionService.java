@@ -30,4 +30,11 @@ public interface TransactionService {
 	 * @return Mono type Void
 	 */
 	public Mono<Void> delete(Transaction transaction);
+	
+	/**
+	 * This method finds the transactions of an account
+	 * @param accountId
+	 * @return
+	 */
+	public Flux<Transaction> findByAccountId(String accountId);
 }
