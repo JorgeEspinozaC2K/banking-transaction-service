@@ -16,7 +16,7 @@ import reactor.core.publisher.Flux;
 import reactor.core.publisher.Mono;
 
 @RestController
-@RequestMapping("/api/v1/usuario")
+@RequestMapping("/transaction")
 public class TransactionController {
 	
 	//dependency injection required for the class work
