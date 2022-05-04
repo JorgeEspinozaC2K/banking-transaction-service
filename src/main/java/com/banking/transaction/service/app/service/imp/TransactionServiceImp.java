@@ -55,4 +55,9 @@ public class TransactionServiceImp implements TransactionService{
 					return Mono.empty();
 					});
 	}
+
+	@Override
+	public Flux<Transaction> findAllTenLast(Long cardNumber) {
+		return transactionRepository.findTop10ByCardNumberOrderByOperationDateDesc(cardNumber);
+	}
 }

@@ -1,6 +1,6 @@
 package com.banking.transaction.service.app.model;
 
-import java.util.Date;
+import java.time.LocalDate;
 
 import org.springframework.data.annotation.Id;
 import org.springframework.data.mongodb.core.mapping.Document;
@@ -19,11 +19,12 @@ public class Transaction {
 	
 	@Id
 	private String id;
+	private Boolean fromCard;
+	private Long cardNumber;
 	private Boolean bankDraft;
 	private	Boolean externalAccount;
 	private Integer personalIdentifierDestiny;
 	private Integer personalIdentifierCharge;
-	private Integer moneyType;
 	//charge account
 	private Long numberChargeAccount;
 	//own account, another bank account, abroad
@@ -32,11 +33,9 @@ public class Transaction {
 	private Long numberDestiantionAccount;
 	//amount to transfer
 	private Double amount;
-	//Verification pin
-	private String password;
 	//Status transaction approved or rejected
 	private Integer status;
 	//Operation date
-	private Date operationDate;
+	private LocalDate operationDate = LocalDate.now();
 
 }

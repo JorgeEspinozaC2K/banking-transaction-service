@@ -11,4 +11,11 @@ public interface TransactionRepository extends ReactiveMongoRepository<Transacti
 
 	public Flux<Transaction> findByAccountId(String accountId);
 	
+	/**
+	 * 
+	 * @param customerId
+	 * @return
+	 */
+	public Flux<Transaction> findTop10ByCardNumberOrderByOperationDateDesc(Long cardNumber);
+	
 }

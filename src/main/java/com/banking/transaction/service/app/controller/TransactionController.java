@@ -44,4 +44,9 @@ public class TransactionController {
 		return transactionService.delete(transaction);
 	}
 	
+	@GetMapping("/lastTen/{cardNumber}")
+	public Flux<Transaction> findTenLast(@PathVariable Long cardNumber){
+		return transactionService.findAllTenLast(cardNumber);
+	}
+	
 }

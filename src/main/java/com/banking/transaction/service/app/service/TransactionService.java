@@ -37,4 +37,6 @@ public interface TransactionService {
 	 * @return
 	 */
 	public Flux<Transaction> findByAccountId(String accountId);
+	
+	public Flux<Transaction> findAllTenLast(Long cardNumber);
 }
